@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto ASAS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgo=" />
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+</head>
+<body>
+  <header>
+    <img src="logoasas.png" alt="Logo ASAS" class="logo" />
+    <h1>CADASTRO PROJETO ASAS</h1>
+    <h2>CIEP BRIZOLÃO 183 JOÃO VITTA</h2>
+    <h3>ANIMAÇÃO CULTURAL</h3>
+  </header>
+
+  <main>
+    <form id="cadastroForm">
+      <input type="text" id="nome" placeholder="Nome do aluno" required />
+      <input type="text" id="turmaOrigem" placeholder="Turma de origem" required />
+      <select id="turmaAsas" required>
+        <option value="" disabled selected>Turma ASAS</option>
+        <option>A1</option>
+        <option>A2</option>
+        <option>A3</option>
+        <option>A4</option>
+      </select>
+      <input type="tel" id="whatsapp" placeholder="WhatsApp com DDD" required />
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <div class="controle">
+      <select id="filtroTurma">
+        <option value="todos">Ver todos</option>
+        <option>A1</option>
+        <option>A2</option>
+        <option>A3</option>
+        <option>A4</option>
+      </select>
+      <button id="exportarExcel">📁 Exportar Excel</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Turma Origem</th>
+          <th>Turma ASAS</th>
+          <th>WhatsApp</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tabelaAlunos"></tbody>
+    </table>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
