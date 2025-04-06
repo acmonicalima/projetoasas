@@ -1,13 +1,13 @@
+// Configuração do Firebase 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY", // Substitua com a chave da sua API do Firebase
-  authDomain: "projetoasas-77bf1.firebaseapp.com", // Substitua com seu domínio
-  databaseURL: "https://projetoasas-77bf1-default-rtdb.firebaseio.com", // Substitua com sua URL
+  apiKey: "AIzaSyC2GhMxCB01W6gxrr_YvR6pMV9vsc6cykg",
+  authDomain: "projetoasas-77bf1.firebaseapp.com",
+  databaseURL: "https://projetoasas-77bf1-default-rtdb.firebaseio.com",
   projectId: "projetoasas-77bf1",
-  storageBucket: "projetoasas-77bf1.appspot.com",
-  messagingSenderId: "SENDER_ID",
-  appId: "APP_ID"
+  storageBucket: "projetoasas-77bf1.firebasestorage.app",
+  messagingSenderId: "524231405875",
+  appId: "1:524231405875:web:4492692e765242cf3b8e46"
 };
-
 firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
 
